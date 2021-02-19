@@ -1,0 +1,119 @@
+// home//
+.home{
+    width: 100vw;
+    position: relative;
+    font-family: Arial;
+    display: flex;
+}
+img{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+.text-block {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    // background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+  }
+
+  h4{
+      animation:type 5s steps(50);
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: consolas;
+  }
+  @keyframes type{
+      0%{
+        width:0ch;
+      }
+      100%{
+          width:50ch;
+      }
+  }
+
+  p{
+    animation:para-type 5s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+   }
+  @keyframes para-type{
+    0%{
+      width:0ch;
+    }
+    100%{
+        width:50ch;
+    }
+}
+@mixin shadow {
+    box-shadow: -6px -6px 9px #fff,6px 6px 9px rgba(#000,0.4);
+}
+.hire{
+    width: 150px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #0082e6;
+    border-radius: 7px;
+    color: white;
+    position: relative;
+    top: 40px;
+    outline: 0;
+}
+
+.hire:hover{
+    background-color: #1b9bff;
+}
+
+.hire:active{
+    background-color: #2c3e50;
+}
+
+.fa-smile-o{
+    font-size: 15px;
+}
+// @media only screen and (max-width:768px){
+//   img{
+//       width: 116vw !important;
+//   }
+//  }
+
+// @media only screen and (max-width: 425px){
+//    .text-block{
+//        left: 25px !important;
+//        font-size: 16px !important;
+//    }
+//    img{
+//        width: 106% !important;
+//    }
+// }
+
+// @media only screen and (max-width: 375px){
+//     .text-block{
+//         left: 25px !important;
+//         font-size: 16px !important;
+//     }
+
+//     img{
+//         width: 100vw !important;
+//     }
+//  }
+
+//  @media only screen and (max-width: 325px){
+//     .text-block{
+//         left:17px !important;
+//         font-size: 16px !important;
+//     }
+//     .home{
+//       width: 100vw !important;
+//     }
+//     img{
+//         width: 100vw !important;
+//     }
+//  }

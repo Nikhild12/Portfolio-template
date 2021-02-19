@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.blogs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
+}
+.container-blog{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100px;
+}
+.container-blog .card-blog{
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-blog .card-blog:hover{
+    box-shadow: inset -6px -6px 20px rgba(255,255,255,1),
+                inset 6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-blog .card-blog .image{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container-blog .card-blog .content-blog{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+.container-blog .card-blog .content-blog .heading-blog{
+    color: #1b9bff;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+.logo{
+    height: 120px;
+    max-width: 120px;
+}
+
+.blog-para{
+    animation: none;
+    overflow: none;
+    white-space: none;
+    font-family: 'Poppins', sans-serif;
+    color: #1b9bff;
+    // overflow-wrap: break-word !important;
+    // word-wrap: break-word !important;
+}
+
+.container-blog .card-blog .content-blog a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #1b9bff;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255,255,255,1),
+    4px 4px 15px rgba(0,0,0,0.1);
+}
+
+.container-blog .card-blog .content-blog a:hover{
+    box-shadow: inset -4px -4px 15px rgba(255,255,255,0.5),
+    inset 4px 4px 15px rgba(0,0,0,0.1) !important;
+    color: white;
+}
+
+.container-blog .card-blog a:hover span{
+    display: block;
+    transform: scale(0.98);
+}
+
+.container-blog .card-blog:hover .image,
+.container-blog .card-blog:hover .content-blog{
+    transform: scale(0.98);
+}
+
+.heading-4{
+    margin-top: 30px;
+    font-size: 35px;
+    // border-bottom: 3px solid #eee;
+    color: #1b9bff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}

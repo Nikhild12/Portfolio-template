@@ -1,0 +1,125 @@
+$blue:#0082e6;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.heading-1{
+    margin-top: 30px;
+    font-size: 35px;
+    border-bottom: 3px solid#737a82;
+    color: #737a82;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading-1:hover{
+    border-bottom: 3px solid $blue;
+    color:$blue;
+}
+
+@mixin shadow {
+    // box-shadow: -6px -6px 9px rgb(0 0 0 / 5%),6px 6px 9px rgb(0 0 0 / 25%);
+    box-shadow: -6px -6px 20px  #ffffff00,6px 6px 20px rgba(0,0,0,0.1);
+}
+.who{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.info{
+    // @include shadow;
+    height: 500px;
+    width: 500px;
+    background: rgb(0 0 0 / 3%);
+    padding: 2rem;
+    // border-radius: 30px;
+    // box-shadow:  inset -6px -6px 10px rgba(255,255,255,0.5),inset 6px 6px 20px rgba(0,0,0,0.05);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills{
+    // @include shadow;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background: rgb(0 0 0 / 3%);
+    padding: 2rem;
+    // border-radius: 30px;
+    // box-shadow:  inset -6px -6px 10px rgba(255,255,255,0.5),inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+.info:hover{
+    box-shadow:  inset -6px -6px 10px rgba(255,255,255,0.5),inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+
+.skills:hover{
+    box-shadow:  inset -6px -6px 10px rgba(255,255,255,0.5),inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.name{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.name-img{
+    height: 150px;
+    width: 150px !important;
+    border-radius: 30px;
+    box-shadow: -6px -6px 20px #737a826b, 6px 6px 20px #737a8242;
+}
+
+.me{
+    animation: none;
+    overflow: none;
+    white-space: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: #737a82;
+}
+
+b{
+    font-family: "Josefin Sans", sans-serif;
+    color: $blue;
+}
+
+.progress-bar{
+    background-color:#737a822e!important;
+    height: 20px;
+    display: flex;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.bar{
+    color:#fff!important;
+    background-color:$blue!important;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.skills-name{
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    left: 17px;
+    top: 4px;
+}
+.skills-about{
+    display: flex;
+    justify-content: center;
+}
+.heading-2{
+    font-size: 30px;
+    border-bottom: 3px solid #737a82;
+    color: #737a82;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 20px;
+}
+

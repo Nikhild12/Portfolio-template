@@ -1,0 +1,25 @@
+<div class="contact" id="contact-us">
+    <div class="form">
+        <h2>CONTACT US</h2>
+      <form [formGroup]="sendMailForm">
+        <div class="input">
+            <div class="inputBox">
+                <label>Name</label>
+                <input type="text" name="" placeholder="Enter Your Name" formControlName="name">
+            </div>
+            <div class="inputBox">
+                <label>Email</label>
+                <input type="email" name="" placeholder="example@xyz.com" formControlName="email">
+            </div>
+            <div class="inputBox">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message" formControlName="message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" name="" placeholder="Send Message" (click)="sendMailData(sendMailForm.value)">
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <p> <i class="far fa-copyright"></i>All rights reserved by Life theme</p> -->
